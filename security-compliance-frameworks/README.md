@@ -2,7 +2,7 @@
 
 Gap-assessment methodology and control-alignment guidance across ISO 27001, NIST CSF, PCI DSS, HIPAA, and GDPR.
 
-> Part of my [security portfolio](../PROFILE-README.md) · See [Services page](https://www.linkedin.com/services/page)
+> Part of my [security portfolio](https://www.linkedin.com/in/lua-cybersecurity-prof/) · See [Services page](https://www.linkedin.com/services/page/1943b0320a0418661a)
 
 ## Contents
 
