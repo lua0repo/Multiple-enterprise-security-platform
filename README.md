@@ -2,8 +2,8 @@
 
 12+ years directing SIEM operations, incident response, and threat detection programs across enterprise environments. This portfolio documents the methodology, playbooks, and frameworks I use in production SOC operations — sanitized for public sharing.
 
-🔗 **Services & consulting:** [LinkedIn Services page](https://www.linkedin.com/services/page)
-🔗 **Connect:** [LinkedIn Profile](#)
+🔗 **Services & consulting:** [LinkedIn Services page](https://www.linkedin.com/services/page/1943b0320a0418661a)
+🔗 **Connect:** [LinkedIn Profile](https://www.linkedin.com/in/lua-cybersecurity-prof/)
 
 ---
 
