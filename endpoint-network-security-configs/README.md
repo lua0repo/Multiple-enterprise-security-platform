@@ -2,7 +2,7 @@
 
 Platform deployment, policy design, and hardening guidance across the endpoint and network security stack.
 
-> Part of my [security portfolio](../PROFILE-README.md) · See [Services page](https://www.linkedin.com/services/page)
+> Part of my [security portfolio](https://www.linkedin.com/in/lua-cybersecurity-prof/) · See [Services page](https://www.linkedin.com/services/page/1943b0320a0418661a)
 
 ## Contents (one folder per platform)
 
