@@ -1,36 +1,35 @@
-# SOC Operations & SIEM Management
+# SOC playbooks
 
-Configuration standards, rule-tuning methodology, and alert-optimization frameworks used to run enterprise SIEM operations across Splunk, Microsoft Sentinel, and ArcSight.
+Investigation playbooks used for triage, containment, and response across common SOC alert categories. Each playbook follows the same structure so analysts can move between scenarios without relearning format.
 
-> Part of my [security portfolio](../PROFILE-README.md) · See [Services page](https://www.linkedin.com/services/page)
+Part of my [security portfolio](https://www.linkedin.com/in/lua-cybersecurity-prof/) · [LinkedIn Services](https://www.linkedin.com/services/page/1943b0320a0418661a )
 
-## Contents
+## Playbook structure
 
-- `splunk/` — SPL search examples, dashboard layout patterns, rule-tuning checklist
-- `microsoft-sentinel/` — KQL query examples, analytics rule design, workbook structure
-- `arcsight/` — correlation rule logic, use-case design notes
-- `alert-optimization/` — false-positive reduction methodology, tuning cadence, alert-fatigue metrics
-- `log-correlation/` — cross-source correlation examples (auth logs + EDR + firewall)
+Every playbook in this repo follows:
 
-## Methodology Overview
+1. **Severity** — default classification and what escalates it
+2. **MITRE ATT&CK mapping** — tactics/techniques involved
+3. **Detection logic** — what triggers the alert, common data sources
+4. **Investigation steps** — the actual triage sequence, in order
+5. **Containment** — immediate actions to stop spread/impact
+6. **Eradication** — removing the root cause
+7. **Recovery** — returning to normal operations safely
+8. **Lessons learned** — tuning feedback loop
 
-**Rule Tuning Lifecycle**
-1. Baseline noise volume per rule/use case
-2. Identify false-positive drivers (source, asset class, time pattern)
-3. Apply suppression logic or enrichment (asset context, threat intel)
-4. Re-baseline and measure alert-to-incident conversion rate
-5. Document and version the change
+## Index
 
-**Sample metrics tracked**
-- Alert volume by severity/source
-- False-positive rate (target trend, not absolute — varies by environment)
-- Detection coverage against MITRE ATT&CK tactics
-- Mean time from alert to triage decision
-
-## Sample Artifacts (to add)
-- [ ] 5–8 annotated SPL/KQL queries with purpose + expected output + false-positive notes
-- [ ] One before/after tuning case study (anonymized)
-- [ ] SIEM use-case design template (blank, reusable)
+| Playbook | Primary tactic |
+|---|---|
+| [Brute Force Investigation](./Brute%20Force%20Investigation.md) | Credential Access |
+| [Phishing Investigation](./Phishing%20Investigation.md) | Initial Access |
+| [Ransomware Investigation](./Ransomware%20Investigation.md) | Impact |
+| [Impossible Travel](./Impossible%20Travel.md) | Initial Access / Credential Access |
+| [Suspicious PowerShell](./Suspicious%20PowerShell.md) | Execution |
+| [Credential Dumping](./Credential%20Dumping.md) | Credential Access |
+| [Web Shell Detection](./Web%20Shell%20Detection.md) | Persistence |
+| [Insider Threat](./Insider%20Threat.md) | Collection / Exfiltration |
 
 ## Note
-All examples use synthetic or publicly documented log samples. No proprietary configurations, client names, or internal architecture are represented.
+
+All detection logic and examples are written as generalized, platform-agnostic methodology (referencing Splunk/Sentinel query patterns conceptually) built from operating SIEM/EDR platforms in production. No client data, real IOCs, or proprietary configurations are included.
