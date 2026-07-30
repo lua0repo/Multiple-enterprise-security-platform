@@ -2,7 +2,7 @@
 
 Triage workflow design, escalation process improvement, MITRE ATT&CK-mapped investigations, and incident reporting for leadership.
 
-> Part of my [security portfolio](../PROFILE-README.md) · See [Services page](https://www.linkedin.com/services/page)
+> Part of my [security portfolio](https://www.linkedin.com/in/lua-cybersecurity-prof/) · See [Services page](https://www.linkedin.com/services/page/1943b0320a0418661a)
 
 ## Contents
 
